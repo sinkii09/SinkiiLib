@@ -1,5 +1,5 @@
 {
-    "name": "SinkiiLib.Pattern",
+    "name": "Sinkii.Library.Runtime.Pattern",
     "rootNamespace": "SinkiiLib.Pattern",
     "references": [],
     "includePlatforms": [],

@@ -1,5 +1,5 @@
 {
-    "name": "SinkiiLib.Utilities",
+    "name": "Sinkii.Library.Runtime.Utilities",
     "rootNamespace": "SinkiiLib.Utilities",
     "references": [],
     "includePlatforms": [],

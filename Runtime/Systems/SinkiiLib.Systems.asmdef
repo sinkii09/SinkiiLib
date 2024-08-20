@@ -1,5 +1,5 @@
 {
-    "name": "SinkiiLib.Systems",
+    "name": "Sinkii.Library.Runtime.Systems",
     "rootNamespace": "SinkiiLib.Systems",
     "references": [
         "GUID:cea296e1babf96d45b73fe7a99235f70",
