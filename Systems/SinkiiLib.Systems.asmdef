@@ -1,0 +1,17 @@
+{
+    "name": "SinkiiLib.Systems",
+    "rootNamespace": "SinkiiLib.Systems",
+    "references": [
+        "GUID:cea296e1babf96d45b73fe7a99235f70",
+        "GUID:88a1a5f231c66464c978b47b2da98e1d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

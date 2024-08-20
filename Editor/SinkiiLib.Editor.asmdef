@@ -1,0 +1,16 @@
+{
+    "name": "SinkiiLib.Editor",
+    "rootNamespace": "SinkiiLib.Editor",
+    "references": [
+        "GUID:219a12633280c4046aba8954d1b8c788"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
