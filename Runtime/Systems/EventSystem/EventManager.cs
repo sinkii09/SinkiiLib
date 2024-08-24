@@ -18,7 +18,7 @@ namespace SinkiiLib.Systems
             }
             else
             {
-                thisEvent += listener;
+                thisEvent = listener;
                 eventDictionary.Add(eventName, thisEvent);
             }
         }
