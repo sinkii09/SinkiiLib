@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace SinkiiLib.Systems
+namespace SinkiiLib.UI
 {
     public class TabbedMenu : MonoBehaviour
     {
