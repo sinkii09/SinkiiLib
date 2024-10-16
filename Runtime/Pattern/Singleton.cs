@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq.Expressions;
@@ -5,10 +6,13 @@ using UnityEngine;
 
 namespace SinkiiLib.Pattern
 {
+    
     public class Singleton<T> : MonoBehaviour where T : Component
     {
         private static T instance;
         private static readonly object lockObject = new object();
+
+        [SerializeField] bool DontDestroyOnLoadFlag = true;
         public static T Instance 
         { 
             get 
@@ -51,7 +55,12 @@ namespace SinkiiLib.Pattern
                     GameObject gameObj = new GameObject();
                     gameObj.name = typeof(T).Name;
                     instance = gameObj.AddComponent<T>();
-                    DontDestroyOnLoad(gameObj);
+                    Singleton<T> singletonComponent = instance as Singleton<T>;
+                    if (singletonComponent != null && singletonComponent.DontDestroyOnLoadFlag)
+                    {
+                        DontDestroyOnLoad(gameObj);
+                    }
+
                 }
             }
             catch (System.Exception ex)
@@ -66,7 +75,10 @@ namespace SinkiiLib.Pattern
                 if (instance == null)
                 {
                     instance = this as T;
-                    DontDestroyOnLoad(gameObject);
+                    if (DontDestroyOnLoadFlag)
+                    {
+                        DontDestroyOnLoad(gameObject);
+                    }
                 }
                 else
                 {
